@@ -92,7 +92,7 @@ const DisplayWatchesArea = ({ type = "intro" }) => {
                     >
                       {type === "case" && (
                         <img
-                          src={`/src/assets/${getImageUrl(
+                          src={`/dist/assets/${getImageUrl(
                             [option.value, size],
                             true
                           )}`}
@@ -105,7 +105,7 @@ const DisplayWatchesArea = ({ type = "intro" }) => {
                       )}
                       {type === "band" && (
                         <img
-                          src={`/src/assets/${getImageUrl(
+                          src={`/dist/assets/${getImageUrl(
                             [option.value, size],
                             false
                           )}`}
@@ -119,7 +119,7 @@ const DisplayWatchesArea = ({ type = "intro" }) => {
                       {type === "size" && (
                         <div className="combinedimage">
                           <img
-                            src={`/src/assets/${getImageUrl(
+                            src={`/dist/assets/${getImageUrl(
                               [data.case, option.value],
                               true
                             )}`}
@@ -129,7 +129,7 @@ const DisplayWatchesArea = ({ type = "intro" }) => {
                             className="watchCase image"
                           />
                           <img
-                            src={`/src/assets/${getImageUrl(
+                            src={`/dist/assets/${getImageUrl(
                               [data.band, option.value],
                               false
                             )}`}
@@ -157,7 +157,7 @@ const DisplayWatchesArea = ({ type = "intro" }) => {
         >
           {type !== "case" && (
             <Img
-              src={`src/assets/${getImageUrl([data.case, size], true)}`}
+              src={`dist/assets/${getImageUrl([data.case, size], true)}`}
               width={500}
               height={500}
               alt="Apple Watch Case"
@@ -167,7 +167,7 @@ const DisplayWatchesArea = ({ type = "intro" }) => {
           )}
           {type !== "band" && (
             <img
-              src={`src/assets/${getImageUrl([data.band, size], false)}`}
+              src={`dist/assets/${getImageUrl([data.band, size], false)}`}
               width={500}
               height={500}
               alt="Apple Watch Band"
@@ -178,7 +178,7 @@ const DisplayWatchesArea = ({ type = "intro" }) => {
         </div>
       )}
       <img
-        src={`src/assets/${getImageUrl(
+        src={`dist/assets/${getImageUrl(
           ["sideview", data.case, data.band, size],
           false
         )}`}
